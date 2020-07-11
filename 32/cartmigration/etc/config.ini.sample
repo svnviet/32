@@ -1,0 +1,25 @@
+[local]
+db_port = 3306
+db_host = localhost
+db_username = root
+db_password = 123456
+db_name = cartmigration_ver3
+db_prefix =
+ignore_create_new_db = true
+port = 8080
+mode = live
+private_key = 7cff4a7e8fba53a1435da0c9102beacd
+debug = False
+time_clone = 1589795205
+;daily|single|custom
+app_log = daily
+;if all_log = custom
+log_file = xxx
+[server]
+ip = 127.0.0.1
+api_url = http://localhost/cartmigration_ui_32/public/api/v1
+private_key = f218ec3ebc37364c86cc43bfed18e3c6
+[sendgrid]
+email_from = litextension@com.vn
+api_key =
+

@@ -1,0 +1,75 @@
+[src]
+cart_type = ekm
+cart_url = http://127.0.0.1/magento/magento_1.9.4
+token = 123456
+;api[api_key] = 123
+;api[password] = 234
+
+;if src setup type = file, Copy the file to the directory pub/uploads/xxx
+;file = xxx
+
+[target]
+cart_type = magento
+cart_url = http://localhost/demo/magento_demo2
+token = 123456
+
+[config]
+taxes = True
+manufacturers = True
+categories = True
+products = True
+customers = True
+orders = True
+reviews = True
+pages = True
+blocks = True
+coupons = False
+cartrules = False
+
+;Clear current data on Target Store before Migration
+clear_shop = True
+
+;Transfer images from Categories, Product descriptions to Target Store
+img_des = False
+
+;Ignore migrate image to target store
+ignore_image = False
+
+;Preserve Product IDs on Target Store
+pre_prd = False
+
+;Preserve Customer IDs on Target Store
+pre_cus = False
+
+;Preserve Order IDs on Target Store
+pre_ord = False
+
+;Migrate categories and products SEO URLs
+seo = True
+
+;Strip HTML from category, product names
+strip_html = False
+
+;Create the 301 redirects on your target store after migration
+seo_301 = False
+
+;Migrate customers' passwords
+cus_pass = False
+
+;Migrate Source Store categories into Shopify Smart Collections (only target shopify)
+smart_collection = False
+
+;Migrate customer shopping cart (only magento => magento)
+quotes = False
+
+;Migrate guest newsletter subscribers (only magento => magento)
+newsletters = False
+
+[map-order-status]
+cancel = xxx
+
+[map-customer-group]
+cancel = xxx
+
+[map-language]
+en = en
