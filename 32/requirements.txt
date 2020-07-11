@@ -12,7 +12,7 @@ xmltodict==0.11.0
 beautifulsoup4==4.4.1
 pycurl==7.43.0
 requests==2.9.1
-psutil==5.4.8
+psutil==5.6.6
 lxml
 sendgrid==5.6.0
 pyodbc==4.0.25
